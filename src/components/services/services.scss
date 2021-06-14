@@ -1,0 +1,36 @@
+@import "../../App.scss";
+.services {
+  height: auto;
+  background-color: #ec1b4c;
+  @include mobile {
+    overflow: hidden;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    h2 {
+      text-align: center;
+      padding-top: 30px;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .text {
+      text-align: center;
+      margin: 20px 0;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+    .cardContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 50px;
+      @include mobile {
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+      }
+    }
+  }
+}

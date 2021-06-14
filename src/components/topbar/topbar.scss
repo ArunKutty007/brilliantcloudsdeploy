@@ -1,0 +1,62 @@
+@import "../../App.scss";
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  background-color: crimson;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 3;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      width: 80px;
+    }
+    span {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      list-style-type: none;
+      margin: 0px 8px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    a:hover {
+      border-bottom: 2px solid #fff;
+    }
+  }
+  .baricon {
+    display: none;
+  }
+}
+
+@include tablet {
+  .navbar {
+    display: none;
+  }
+  .baricon {
+    display: inline-flex;
+  }
+}

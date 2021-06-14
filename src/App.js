@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  Topbar,
+  Home,
+  About,
+  Services,
+  Process,
+  Contact,
+  Portfolio,
+  OtherServices,
+  Testimonials,
+  Model,
+} from "./components/index";
+import "./App.scss";
+
+import { useState } from "react";
 
 function App() {
+  const [sidebar, setSidebar] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Topbar sidebar={sidebar} setSidebar={setSidebar} />
+
+      <div className="sections">
+        <Home />
+        <About />
+        <Services />
+        <OtherServices />
+        <Process />
+
+        <Portfolio />
+        <Testimonials />
+        <Contact />
+      </div>
     </div>
   );
 }
-
 export default App;

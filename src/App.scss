@@ -1,0 +1,31 @@
+.app {
+  height: 100vh;
+}
+.sections {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  position: relative;
+  top: 80px;
+  z-index: 2;
+}
+
+.sections > * {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  scroll-behavior: smooth;
+}
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
+}
+$tab: 900px;
+
+@mixin tablet {
+  @media (max-width:#{$tab}) {
+    @content;
+  }
+}

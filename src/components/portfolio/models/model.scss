@@ -1,0 +1,18 @@
+.model {
+  height: 50vh;
+
+  .container {
+    width: 1100px;
+    background-color: aqua;
+    margin: 0 auto;
+
+    overflow: scroll;
+    p {
+      text-align: center;
+    }
+    .img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f3f3f3;
+  background-color: #fff;
+  padding: 10px 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  h3 {
+    margin: 10px 0;
+  }
+  p {
+    font-weight: 350;
+  }
+}

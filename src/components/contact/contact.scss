@@ -1,0 +1,76 @@
+.contact {
+  background: url(../../assets/contactbg.jpg);
+  color: #fff;
+  height: 110vh;
+  h1 {
+    text-align: center;
+    padding-top: 20px;
+    span {
+      text-align: center;
+    }
+  }
+  .container {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 75%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .container > div {
+    border: 1px dashed #fff;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+  }
+  .container > div:hover {
+    border: 1px dashed #fff;
+
+    background-color: transparent;
+    padding: 50px;
+  }
+  .container > h3 {
+    text-align: center;
+  }
+}
+.footer {
+  background-color: crimson;
+  height: auto;
+  padding: 30px;
+
+  .fcontainer {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.icons {
+  font-size: 1rem;
+}
+.icons > i {
+  margin: 0 10px;
+  font-size: 3em;
+}
+.copyright {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  span {
+    font-size: 30px;
+    text-align: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+.anonymous:hover {
+  transform: scale(1.1);
+}

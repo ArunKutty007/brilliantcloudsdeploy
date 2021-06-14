@@ -1,0 +1,19 @@
+.sidebar {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  background-color: crimson;
+  opacity: 0.5;
+
+  ul li {
+    display: block;
+    padding: 10px;
+    margin: 40px 10px;
+  }
+  a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+  }
+}

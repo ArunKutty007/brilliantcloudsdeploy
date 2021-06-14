@@ -1,0 +1,48 @@
+@import "../../App.scss";
+.about {
+  background-color: #f3f3f3;
+  padding: 10px;
+  .container {
+    max-width: 1250px;
+
+    margin: 0 auto;
+    padding: 0 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .left {
+    flex: 2;
+    @include mobile {
+      padding: 10px;
+    }
+    .aboutimg {
+      width: 600px;
+      height: 550px;
+      @include mobile {
+        width: 550px;
+        object-fit: cover;
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    align-self: flex-start;
+    margin-left: 20px;
+    @include mobile {
+      flex-basis: 60%;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 5px 0;
+    }
+  }
+}
