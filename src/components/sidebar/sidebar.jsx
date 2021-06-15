@@ -2,12 +2,12 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './sidebar.scss'
 
-const Sidebar = ({sidebar,setSidebar}) => {
+const Sidebar = ({isSidebar,setIsSidebar}) => {
 
     return (
-        <div className='sidebar'>
-            <i class="fas fa-times" onClick={() => setSidebar(!sidebar)}></i>
-            <nav className="navbar">
+        <div className={isSidebar?'sidebar active':'sidebar'}>
+            <div className="sidebar_close_icon"><i class="fas fa-times" onClick={() => setIsSidebar(false)}></i></div>
+            <nav>
             <ul>
               <li>
                 <a href="#home">Home</a>

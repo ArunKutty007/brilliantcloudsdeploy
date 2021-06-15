@@ -2,15 +2,21 @@ import React from "react";
 import "./model.scss";
 import { creator1 } from "../../../assets/index";
 
-const Model = () => {
-  return (
-    <div className="model">
-        <div className='container'>
-        <div className="imageContainer">
-       <p ><img className='img' src={creator1} alt="creator" /></p> 
-      </div>
-      <div className="content">
-       <h2>Project Information</h2>
+const Model = ({setIsModal,isModal}) => {
+
+  const renderImage=(
+    <>
+     {isModal===0&&<div className="image_container"><img className='img' src={creator1} alt="creator" /></div>}
+     {isModal===1&&<div className="image_container"><img className='img' src={creator1} alt="creator" /></div>}
+     {isModal===2&&<div className="image_container"><img className='img' src={creator1} alt="creator" /></div>}
+     {isModal===3&&<div className="image_container"><img className='img' src={creator1} alt="creator" /></div>}
+     {isModal===4&&<div className="image_container"><img className='img' src={creator1} alt="creator" /></div>}
+     </>
+  )
+
+  const renderContent=(
+    <div className="content">
+       <h2>Project Information {isModal}</h2>
        <ul>
            <li>
                Category:Zoho Creator
@@ -23,10 +29,13 @@ const Model = () => {
             </li>
             
        </ul>
-
       </div>
-        </div>
-      
+  )
+  return (
+    <div className="model">
+      {renderImage}
+      {renderContent}
+      <div className="close_icon"><i className="fas fa-times" style={{cursor:'pointer'}} onClick={() => setIsModal()}></i></div>
     </div>
   );
 };

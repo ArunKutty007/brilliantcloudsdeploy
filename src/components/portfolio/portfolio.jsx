@@ -6,6 +6,7 @@ import Model from '../portfolio/models/model';
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("zohoone");
+  const [isModal,setIsModal]=useState()
   const [data, setdata] = useState([]);
 
   const list = [
@@ -63,9 +64,9 @@ const Portfolio = () => {
         })}
       </ul>
       <div className="container">
-        {data.map((d) => {
+        {data.map((d,index) => {
           return (
-            <div className="item">
+            <div className="item" onClick={()=>setIsModal(index)}>
               <img src={d.img} alt="imagelogo" />
               <h3>{d.title}</h3>
             </div>
@@ -73,7 +74,8 @@ const Portfolio = () => {
         })}
       </div>
     </div>
-    <Model />
+  {isModal!==undefined&&  <Model isModal={isModal} setIsModal={setIsModal} />}
+  {isModal!==undefined&&<div className="backdrop"></div>}
     </>
   );
 };

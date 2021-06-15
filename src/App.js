@@ -15,11 +15,9 @@ import "./App.scss";
 import { useState } from "react";
 
 function App() {
-  const [sidebar, setSidebar] = useState(true);
-
   return (
     <div className="app">
-      <Topbar sidebar={sidebar} setSidebar={setSidebar} />
+      <Topbar />
 
       <div className="sections">
         <Home />

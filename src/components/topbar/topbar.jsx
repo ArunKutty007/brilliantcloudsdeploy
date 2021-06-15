@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./topbar.scss";
 import { logo } from "../../assets/index";
 import Sidebar from '../sidebar/sidebar'
 
-const topbar = ({sidebar,setSidebar}) => {
+const Topbar = () => {
+
+  const [isSidebar,setIsSidebar]=useState(false)
 
 
-if(sidebar){
+
   return (
 
-
+<>
     <div className="topbar">
       <div className="container">
         
@@ -40,19 +42,21 @@ if(sidebar){
               
             </ul>
           </nav>
-          <div className='baricon'>
-          <i class="fas fa-times" ></i>
+          <div className='baricon' onClick={()=>setIsSidebar(true)}>
+         <span>menu</span>
           </div>
           
       </div>
     </div>
+   <Sidebar isSidebar={isSidebar} setIsSidebar={setIsSidebar} />
+    </>
   ) 
-  } else{
-    return(
-    <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
+ 
+    
+    
 
-    )
-  }
+    
+  
 };
 
-export default topbar;
+export default Topbar;
