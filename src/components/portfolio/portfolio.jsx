@@ -75,7 +75,7 @@ const Portfolio = () => {
       </div>
     </div>
   {isModal!==undefined&&  <Model isModal={isModal} setIsModal={setIsModal} />}
-  {isModal!==undefined&&<div className="backdrop"></div>}
+  {isModal!==undefined&&< div className="backdrop"></div>}
     </>
   );
 };

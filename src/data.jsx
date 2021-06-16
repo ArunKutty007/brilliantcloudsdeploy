@@ -2,12 +2,12 @@ import {creator1,creator2,creator3,creator4,creator5,crm1,crm2,crm3,desk1,desk2,
 export const zohoone=[
     {
         id:1,
-        title:'sdfsdaf',
+        title:'Dashboard',
         img:creator1
     },
     {
         id:2,
-        title:'Dashboard',
+        title:'ATP-JetAirways',
         img:creator2
     },
     {
@@ -17,13 +17,45 @@ export const zohoone=[
     },
     {
         id:4,
+        title:'Ortho Care',
+        img:creator4
+    },
+    {
+        id:5,
+        title:'Ortho Care',
+        img:creator5
+    },
+    
+    {
+        id:6,
         title:'CRM Blue Print',
         img:crm1
     },
     {
-        id:5,
+        id:7,
+        title:'Credi Rebbot',
+        img:crm2
+
+    },
+    {
+        id:8,
+        title:'Paragon Private Health',
+        img:crm3
+    },
+    {
+        id:9,
+        title:'Deluge Script Custom Function',
+        img:desk1
+    },
+    {
+        id:10,
         title:'Zoho Sales IQ',
         img:desk2
+    },
+    {
+        id:11,
+        title:'CRM Web',
+        img:desk3
     }
     
 ]
