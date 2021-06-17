@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div className="about" id="about">
       <div className="container">
-        <div className="left">
-          <img src={about} alt="about" className="aboutimg" />
+        <div className="left_block">
+          <img src={about} alt="about" />
         </div>
         <div className="right">
           <h2>ABOUT US</h2>

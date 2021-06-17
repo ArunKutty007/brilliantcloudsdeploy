@@ -19,6 +19,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
     @include mobile {
       grid-template-columns: 1fr;
     }
