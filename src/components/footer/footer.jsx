@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.scss'
+import {anonymous2, logo} from '../../assets/index'
 
 const Footer = () => {
     return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="footer">
      <div className="fcontainer">
        <div>
-         <h1>Brilliant Clouds</h1>
+         <p style={{fontSize:"2rem"}}><img src={logo} style={{width:"60px"}}/>Brilliant Clouds</p>
          <p>
            3/354, Anna nagar,Peddamelupalli,
            <br />
@@ -35,8 +36,8 @@ const Footer = () => {
        
      </div>
      <div className="copyright">
-          <p>&copy;Copyright Brilliant Clouds. All Rights Reserved</p> 
-           {/* Developed and Maintained by  <span><img style={{width:"50px",position:"relative",top:"20px",transition:"all 1s",cursor:"pointer"}} className="anonymous" src={anonymous2}/> </span> */}
+          <p>&copy;Copyright Brilliant Clouds. All Rights Reserved</p> <br/>
+          <span><p> Developed and Maintained by FUTURA </p></span>
     </div>
     </>
    

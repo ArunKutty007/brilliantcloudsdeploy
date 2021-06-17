@@ -26,7 +26,7 @@
     }
     .aboutimg {
       width: 600px;
-      height: 550px;
+      height: auto;
       @include mobile {
         width: 550px;
         object-fit: cover;
