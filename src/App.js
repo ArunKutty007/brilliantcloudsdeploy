@@ -9,6 +9,7 @@ import {
   OtherServices,
   Testimonials,
   Model,
+  Footer
 } from "./components/index";
 import "./App.scss";
 
@@ -29,6 +30,7 @@ function App() {
         <Portfolio />
         <Testimonials />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

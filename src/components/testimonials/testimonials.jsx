@@ -77,6 +77,7 @@ const Testimonials = () => {
     <div className="testimonials">
         
       <h1> Testimonials</h1>
+      <div className='cardContainer'>
       <Slider {...settings}>
       <Card name={data[0].name} text={data[0].text} work={data[0].work}/>
       <Card name={data[1].name} text={data[1].text} work={data[1].work}/>
@@ -85,6 +86,8 @@ const Testimonials = () => {
       <Card name={data[4].name} text={data[4].text} work={data[4].work}/>
 
       </Slider>
+      </div>
+      
      
       
      

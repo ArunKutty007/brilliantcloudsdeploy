@@ -41,6 +41,7 @@ import medico from "./medico.png";
 import jetairways from "./jetairways.png";
 import anonymous from "./anonymous.png";
 import anonymous2 from "./anonymous2.png";
+import menu from "./menu.png"
 export {
   logo,
   down,
@@ -85,4 +86,5 @@ export {
   apartlogo,
   anonymous,
   anonymous2,
+  menu
 };

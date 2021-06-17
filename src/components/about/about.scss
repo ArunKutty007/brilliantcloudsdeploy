@@ -19,7 +19,8 @@
     }
   }
   .left {
-    flex: 2;
+    flex-basis: 1;
+    flex-shrink: 4;
     @include mobile {
       padding: 10px;
     }
@@ -33,6 +34,7 @@
     }
   }
   .right {
+    flex-basis: 1;
     flex: 2;
     align-self: flex-start;
     margin-left: 20px;

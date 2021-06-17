@@ -16,6 +16,25 @@
 
   height: auto;
   margin: 10px 30px;
+
+  @include tablet{
+    grid-template-columns:1fr;
+  }
+}
+
+.image_container > img{
+  width:600px;
+  height:500px;
+}
+.right{
+  @include tablet{
+    grid-column:2;
+  }
+}
+.left{
+   @include tablet{
+grid-column:1;
+}
 }
 .section {
   padding: 5px;
@@ -31,46 +50,32 @@
 .info:hover {
   background-color: #f3f3f3;
 }
-.clients {
-  background-color: #f3f3f3;
 
-  padding: 10px 0 40px 0px;
-  h1 {
-    text-align: center;
-    color: crimson;
+.cliContainer{
+  max-width:1100px;
+  margin:0 auto;
+  padding:50px;
+  display:grid;
+  align-items:center;
+  justify-content:center;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  background-color:#f3f3f3;
+
+  @include tablet{
+    grid-template-columns: 1fr 1fr;
   }
-  .clientcontainer {
-    max-width: 1100px;
-    margin: 0 auto;
-
-    height: auto;
-    padding: 10px 30px;
-
-    .imagecontainer {
-      border: 1px solid black;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #fff;
-
-      @include tablet {
-        flex-direction: column;
-      }
-    }
-    .imagecontainer > img {
-      width: 140px;
-      background-color: #fff;
-      opacity: 0.4;
-      transition: all 1s ease;
-      margin-right: 5px;
-      @include tablet {
-        margin-top: 20px;
-      }
-    }
-    .imagecontainer > img:hover {
-      opacity: 1;
-      transform: scale(1.2);
-    }
-  }
+  // @include mobile{
+  //   grid-template-columns:1fr;
+  // }
 }
+
+.imageContainer > img{
+  width:200px;
+  transform:all 1s;
+
+}
+.imageContainer > img:hover{
+  
+  transition:scaleX(1.2);
+}
+

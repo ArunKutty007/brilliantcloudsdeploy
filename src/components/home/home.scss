@@ -1,10 +1,11 @@
+@import "../../App.scss";
 .home {
   background-color: lightsalmon;
   background-image: url(../../assets/background.jpg);
   background-size: cover;
   background-position: center;
   min-height: calc(100vh - 80px);
-
+  width: 100%;
   .container {
     position: relative;
     top: 100px;
@@ -18,7 +19,9 @@
     h1 {
       color: #fff;
       font-size: 3rem;
-
+      @include mobile {
+        font-size: 2rem;
+      }
       span {
         color: crimson;
       }

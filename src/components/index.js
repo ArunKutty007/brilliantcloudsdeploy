@@ -10,7 +10,7 @@ import OtherServices from "./otherservices/otherservices";
 import Testimonials from "./testimonials/testimonials";
 import Model from "./portfolio/models/model";
 import Sidebar from "./sidebar/sidebar";
-
+import Footer from "./footer/footer"
 export {
   Topbar,
   Home,
@@ -23,4 +23,5 @@ export {
   Testimonials,
   Slick,
   Model,
+  Footer
 };

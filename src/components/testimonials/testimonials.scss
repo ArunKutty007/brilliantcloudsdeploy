@@ -1,5 +1,6 @@
 .testimonials {
   background-color: #f3f3f3;
+  min-height:100vh;
   h1 {
     color: #15023a;
     padding-top: 20px;
@@ -7,13 +8,6 @@
     color: crimson;
   }
   .cardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    margin: 0 20px;
+    padding-top:100px;
   }
 }

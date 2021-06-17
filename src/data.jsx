@@ -22,7 +22,7 @@ export const zohoone=[
     },
     {
         id:5,
-        title:'Ortho Care',
+        title:'SRM',
         img:creator5
     },
     
@@ -33,7 +33,7 @@ export const zohoone=[
     },
     {
         id:7,
-        title:'Credi Rebbot',
+        title:'Credit Reboot',
         img:crm2
 
     },
@@ -83,14 +83,10 @@ export const creator=[
     },
     {
         id:4,
-        title:'Ortho Care',
+        title:'SRM',
         img:creator5
-    },
-    {
-        id:3,
-        title:'CRM Web',
-        img:desk3
-    },
+    }
+    
     
 ]
 
