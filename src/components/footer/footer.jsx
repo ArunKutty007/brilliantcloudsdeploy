@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.scss'
-import {anonymous2, logo} from '../../assets/index'
+import {logo} from '../../assets/index'
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer">
      <div className="fcontainer">
        <div>
-         <p style={{fontSize:"2rem"}}><img src={logo} style={{width:"60px"}}/>Brilliant Clouds</p>
+         <p style={{fontSize:"2rem"}}><img src={logo} alt='footer' style={{width:"60px"}}/>Brilliant Clouds</p>
          <p>
            3/354, Anna nagar,Peddamelupalli,
            <br />
@@ -24,10 +24,10 @@ const Footer = () => {
          </p>
        </div>
        <div className="icons">
-       <i class="fab fa-facebook-square"></i>
-       <i class="fab fa-linkedin"></i>
-       <i class="fab fa-twitter-square"></i>
-       <i class="fab fa-instagram-square"></i>
+       <a href='#'><i class="fab fa-facebook-square"></i></a>
+       <a href='#'><i class="fab fa-linkedin"></i></a>
+       <a href='#'><i class="fab fa-twitter-square"></i></a>
+       <a href='#'><i class="fab fa-instagram-square"></i></a>
 
 
        </div>
@@ -37,7 +37,7 @@ const Footer = () => {
      </div>
      <div className="copyright">
           <p>&copy;Copyright Brilliant Clouds. All Rights Reserved</p> <br/>
-          <span><p> Developed and Maintained by futura </p></span>
+          <span><p> Developed and Maintained by <span style={{fontSize:"1.2rem"}}> F</span>utura </p></span>
     </div>
     </>
    

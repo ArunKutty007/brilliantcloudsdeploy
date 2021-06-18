@@ -66,7 +66,7 @@ const Portfolio = () => {
       <div className="container">
         {data.map((d,variant) => {
           return (
-            <div className="item" onClick={()=>setIsModal(variant)}>
+            <div className="item" onClick={()=>setIsModal(d.variant)}>
               <img src={d.img} alt="imagelogo" />
               <h3>{d.title}</h3>
             </div>

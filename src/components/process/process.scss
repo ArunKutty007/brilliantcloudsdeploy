@@ -26,6 +26,7 @@
 .image_container {
   display: grid;
   place-items: center;
+
   width: 100%;
   height: 100%;
 }
@@ -77,9 +78,16 @@
   //   grid-template-columns:1fr;
   // }
 }
-
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+}
 .imageContainer > img {
   width: 200px;
+  height: auto;
   transition: all 1s;
   opacity: 0.5;
 }

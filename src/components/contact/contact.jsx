@@ -1,5 +1,5 @@
 import React from "react";
-import { anonymous2 } from "../../assets";
+
 import "./contact.scss";
 
 const Contact = () => {

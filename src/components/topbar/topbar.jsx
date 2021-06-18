@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./topbar.scss";
 import { logo } from "../../assets/index";
 import Sidebar from '../sidebar/sidebar'
-import menu from '../../assets/index'
+
 
 const Topbar = () => {
 

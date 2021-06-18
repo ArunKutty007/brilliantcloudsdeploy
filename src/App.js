@@ -8,12 +8,9 @@ import {
   Portfolio,
   OtherServices,
   Testimonials,
-  Model,
-  Footer
+  Footer,
 } from "./components/index";
 import "./App.scss";
-
-import { useState } from "react";
 
 function App() {
   return (
