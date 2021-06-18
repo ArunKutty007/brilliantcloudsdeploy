@@ -10,22 +10,22 @@ const Sidebar = ({isSidebar,setIsSidebar}) => {
             <nav>
             <ul>
               <li>
-                <a href="#home">Home</a>
+                <a href="#home" onClick={() => setIsSidebar(false)}>Home</a>
               </li>
               <li>
-                <a href="#about">About Us</a>
+                <a href="#about" onClick={() => setIsSidebar(false)}>About Us</a>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <a href="#services" onClick={() => setIsSidebar(false)}>Services</a>
               </li>
               <li>
-                <a href="#process">Process</a>
+                <a href="#process" onClick={() => setIsSidebar(false)}>Process</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio" onClick={() => setIsSidebar(false)}>Portfolio</a>
               </li>
               <li>
-                <a href="#contact">Contact Us</a>
+                <a href="#contact" onClick={() => setIsSidebar(false)}>Contact Us</a>
               </li>
             </ul>
           </nav>
