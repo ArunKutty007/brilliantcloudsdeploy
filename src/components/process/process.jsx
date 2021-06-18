@@ -73,8 +73,8 @@ const Process = () => {
                 <>
                 
                 <div className="section" onClick={() => setimg(index)}>
-                  <div className="info">
-                    <h2>{d.title}</h2>
+                  <div className="info" style={{borderLeft:img===index&&'5px solid red'}}>
+                    <h2 style={{color:img===index&&'red'}}>{d.title}</h2>
                     <p>{d.text}</p>
                     
                   </div>

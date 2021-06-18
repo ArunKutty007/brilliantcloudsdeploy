@@ -35,7 +35,7 @@
 }
 
 .left {
-  margin-left: 2rem;
+  margin-left: 1rem;
   @include tablet {
     width: 80%;
   }
@@ -44,15 +44,12 @@
   padding: 5px;
 }
 .info {
-  padding: 10px;
+  padding: 10px 10px 10px 1rem;
   width: 100%;
   height: 100%;
   background-color: #fff;
 
   cursor: pointer;
-}
-.info:hover {
-  border-bottom: 3px solid crimson;
 }
 .clients {
   padding-bottom: 2rem;
