@@ -37,7 +37,7 @@ const Footer = () => {
      </div>
      <div className="copyright">
           <p>&copy;Copyright Brilliant Clouds. All Rights Reserved</p> <br/>
-          <span><p> Developed and Maintained by FUTURA </p></span>
+          <span><p> Developed and Maintained by futura </p></span>
     </div>
     </>
    

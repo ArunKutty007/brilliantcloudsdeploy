@@ -10,7 +10,7 @@ const Home = () => {
          init(textRef.current, { showCursor: true, backDelay:1800,strings: ['ONE','CREATOR','CRM','BOOKS','SUBSCRIPTION','INVENTORY'] });
     }, [])
     return (
-        <div className="home">
+        <div className="home" id="home">
             <div className="container">
             <div classNames="text">
                 <h1>Enhance your business with our <span>Services !</span></h1>
@@ -24,7 +24,8 @@ const Home = () => {
             </div>
            
             </div>
-                
+            
+            <a href='#home'><i class="fas fa-arrow-circle-up arrow"></i></a>
         </div>
     )
 }

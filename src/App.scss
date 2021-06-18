@@ -1,11 +1,15 @@
-.app {
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
+
+// .app {
+//   height: 100vh;
+// }
 .sections {
   width: 100%;
   // min-height: calc(100vh - 75px);
   position: relative;
-  top: 80px;
+  //top: 80px;
   z-index: 2;
 }
 

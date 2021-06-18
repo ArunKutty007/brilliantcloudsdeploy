@@ -62,7 +62,7 @@ const Process = () => {
 </>
    )
   return (
-    <div className="process">
+    <div className="process" id="process">
       <h1>Process</h1>
       
         

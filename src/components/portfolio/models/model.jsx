@@ -19,56 +19,67 @@ const Model = ({ setIsModal, isModal }) => {
     <>
       {isModal === 0 && (
         <div className="image_container">
+          <h1>Dashboard</h1>
           <img className="img" src={creator1} alt="creator" />
         </div>
       )}
       {isModal === 1 && (
         <div className="image_container">
+          <h1>ATP-JetAirways</h1>
           <img className="img" src={creator2} alt="creator" />
         </div>
       )}
       {isModal === 2 && (
         <div className="image_container">
+          <h1>Client Printshop</h1>
           <img className="img" src={creator3} alt="creator" />
         </div>
       )}
       {isModal === 3 && (
         <div className="image_container">
+          <h1>Ortho Care</h1>
           <img className="img" src={creator4} alt="creator" />
         </div>
       )}
       {isModal === 4 && (
         <div className="image_container">
+          <h1>SRM</h1>
           <img className="img" src={creator5} alt="creator" />
         </div>
       )}
       {isModal === 5 && (
         <div className="image_container">
+          <h1>CRM BluePrint</h1>
           <img className="img" src={crm1} alt="creator" />
         </div>
       )}
       {isModal === 6 && (
         <div className="image_container">
+          <h1>Credit Reboot</h1>
           <img className="img" src={crm2} alt="creator" />
         </div>
       )}
       {isModal === 7 && (
         <div className="image_container">
+          <h1>Paragon Private Health</h1>
           <img className="img" src={crm3} alt="creator" />
         </div>
       )}
       {isModal === 8 && (
         <div className="image_container">
+          <h1>Deluge Script Custom Function</h1>
           <img className="img" src={desk1} alt="creator" />
         </div>
       )}
       {isModal === 9 && (
         <div className="image_container">
+          <h1>Zoho Sales IQ</h1>
           <img className="img" src={desk2} alt="creator" />
         </div>
       )}
       {isModal === 10 && (
         <div className="image_container">
+          <h1>CRM Web</h1>
           <img className="img" src={desk3} alt="creator" />
         </div>
       )}
@@ -218,21 +229,7 @@ const Model = ({ setIsModal, isModal }) => {
        </div>
      </div>
       )}
-       {/* {isModal === 11 && (
-       <div className="content">
-       <ul>
-         <li>Category:Zoho Creator</li>
-         <li>Client:ASU Company</li>
-         <li>Project date:01 March 2020</li>
-       </ul>
-       <div className='description'>
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
-         nulla quod veniam ullam, sed sit itaque! Earum animi, natus delectus
-         similique officiis, enim corporis rem provident temporibus
-         aspernatur, at culpa?
-       </div>
-     </div>
-      )} */}
+       
     </>
   );
   
